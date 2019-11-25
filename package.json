@@ -1,0 +1,41 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "Create a portfolio app for myself from scratch",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon ./src/index.js",
+    "start": "webpack-dev-server --open --mode development --hot",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amaechi-chuks/My-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "Amaechi-Chuks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amaechi-chuks/My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/amaechi-chuks/My-Portfolio#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "prop-types": "^15.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
