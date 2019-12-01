@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
-import { StyledFooter, FooterText, SocialContact } from '../atoms/Footer';
+import {
+  StyledFooter, FooterText, SocialContact, Text,
+} from '../atoms/Footer';
 
 const Footer = () => (
   <StyledFooter>
@@ -14,13 +16,14 @@ const Footer = () => (
           <li><a href="https://medium.com/@amaechichuks2000" target="_blank" rel="noopener noreferrer"><i className=" fa fa-medium icons" /></a></li>
         </ul>
       </SocialContact>
-      ©
+         ©
       {' '}
       Copyright
       {' '}
       {new Date().getFullYear()}
       {' '}
         Amaechi Chuks
+
     </FooterText>
   </StyledFooter>
 );

@@ -12,3 +12,5 @@ export const white = '#FFFFFF';
 export const dark = '#444';
 export const purple = '#0e1a35';
 export const green = '#1D7546';
+export const gray = '#bababa30';
+export const coffee = '#751919';

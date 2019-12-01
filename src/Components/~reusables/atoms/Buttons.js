@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { red, white } from '../variables/colors';
+import { red, white, coffee } from '../variables/colors';
 
 export const Button = styled.button`
   background-color: ${red};
@@ -19,7 +19,7 @@ export const LinkButton = styled(Link)`
          border: 1px solid transparent;
          border-radius: 5px;
          outline: none;
-         background: ${red};
+         background: ${coffee};
          white-space: nowrap;
 
 

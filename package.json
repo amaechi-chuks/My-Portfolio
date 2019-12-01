@@ -40,6 +40,8 @@
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
+    "@iconify/icons-logos": "^1.0.9",
+    "@iconify/react": "^1.1.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "prop-types": "^15.7.2",

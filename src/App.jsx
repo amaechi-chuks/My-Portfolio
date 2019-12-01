@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import styled from 'styled-components';
-import coverImage from './Components/~reusables/assets/images/home-bg1.jpg';
+import coverImage from './Components/~reusables/assets/images/background-image.jpeg';
 import ContextProvider from './Provider';
 import Spinner from './Components/~reusables/components/Spinner';
 import Footer from './Components/~reusables/components/Footer';
 
+const AboutPage = React.lazy(() => import('./Components/views/About/AboutPage'));
 const LandingPage = React.lazy(() => import('./Components/views/LandingPage/LandingPage'));
 
 const MainArea = styled.div`
@@ -22,6 +23,7 @@ function App() {
           <MainArea>
             <Switch>
               <Route exact path="/" component={LandingPage} />
+              <Route exact path="/about" component={AboutPage} />
             </Switch>
             <Footer />
           </MainArea>

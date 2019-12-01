@@ -10,6 +10,7 @@ export {
   lightGrey,
   white,
   dark,
+  gray,
   green,
   purple, //   rgb_red
 } from './colors';

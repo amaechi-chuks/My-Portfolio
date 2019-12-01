@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ActionButtons from './ActionButtons';
 import {
-  white,
+  black,
   heading5,
   tabletMaxWidth,
   mobileMaxWidth,
@@ -40,7 +40,7 @@ const Container = styled.div`
   padding-top: 130px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   font-size: ${heading5};
-  color: ${white};
+  color: ${black};
   @media screen and (max-width: ${deskTopMaxWidth}) {
     position: relative;
     padding: 40px 20px;

@@ -16,6 +16,8 @@ export const ContentContainer = styled.div`
   -webkit-font-smoothing: antialiased;
   background: #f4f4f4;
   max-height: 100vh;
+  width: 100%;
+  height: 100%;
   @media (min-width: ${extraLargeWidth}) {
     min-height: 100vh;
     max-width: 100vw;

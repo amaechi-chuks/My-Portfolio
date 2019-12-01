@@ -40,7 +40,7 @@ export const StyledSidebar = styled.aside`
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background: rgba(145, 13, 13, 0.8);
+  background: rgba(78, 17, 17, 0.8);
   z-index: 100;
 
 

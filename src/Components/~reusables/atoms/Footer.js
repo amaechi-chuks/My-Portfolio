@@ -6,7 +6,6 @@ import {
 } from '../variables';
 
 export const StyledFooter = styled.footer`
-  height: 50px;
   color: ${white};
   display: flex;
   justify-content: center;
@@ -27,7 +26,6 @@ export const StyledFooter = styled.footer`
   @media (max-width: ${tabletMaxWidth}) {
     display: flex;
   }
-
   @media (max-width: ${mobileMaxWidth}) {
     display: flex;
     width: 100%;
@@ -36,13 +34,12 @@ export const StyledFooter = styled.footer`
 export const SocialContact = styled.div`
  #socials {
   list-style: none;
-  padding: 5px !important;
-  margin: 10px -7px !important;
+  padding: 25px 5px 0 5px;
 }
 
  #socials li {
   display: inline-block;
-  margin: 0 2px !important;
+  margin: 0 2px;
   position: relative;
   border: 1px solid #111;
   width: 50px;
@@ -53,8 +50,8 @@ export const SocialContact = styled.div`
 
  #socials li:hover {
   border: 1px solid #000;
-  background: #fff;
-  color: #fff;
+  background: black;
+  color: black;
 }
 
 
@@ -64,11 +61,15 @@ export const SocialContact = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: bold;
-  font-size: .7em !important;
+  font-size: .7em;
 }
 `;
 
 export const FooterText = styled.div`
   font-size: 18px;
  font-weight: 500
+`;
+export const Text = styled.div`
+margin: 0 0 10px 0;
+background: red;
 `;
