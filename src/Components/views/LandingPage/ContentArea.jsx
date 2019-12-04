@@ -12,11 +12,14 @@ import {
 const ContentArea = () => (
   <Container>
     <WelcomeText>
-      <HeaderText>Hi, I am Amaechi Chuks</HeaderText>
+      <HeaderText>Hey, I am Amaechi Chuks</HeaderText>
       <SubHeading>
-          A Software Engineer with expertise in
+          A Software Engineer with expertise in Javascript
         <br />
         <strong>front-end and back-end web development</strong>
+        <br />
+        from Lagos, Nigeria. I am looking forward to learn and work
+        on a creative ideas that can have a positive effect on the world.
       </SubHeading>
     </WelcomeText>
     <BuutonWrap>

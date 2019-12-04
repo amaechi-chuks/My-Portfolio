@@ -26,7 +26,7 @@ const HomeButton = styled.div`
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.47);
   margin-bottom: 1em;
   border: 1px solid ${black};
-  border-radius: 8px
+  border-radius: 8px;
   font-weight: 500;
   color: ${black};
   display: inline-block;

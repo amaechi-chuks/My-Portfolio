@@ -8,12 +8,17 @@ import jqueryIcon from '@iconify/icons-logos/jquery';
 import expressIcon from '@iconify/icons-logos/express';
 import vueIcon from '@iconify/icons-logos/vue';
 import ReduxSagaIcon from '@iconify/icons-logos/redux-saga';
+import reduxIcon from '@iconify/icons-logos/redux';
 import swaggerIcon from '@iconify/icons-logos/swagger';
 import githubIcon from '@iconify/icons-logos/github';
 import mochaIcon from '@iconify/icons-logos/mocha';
 import chaiIcon from '@iconify/icons-logos/chai';
 import jestIcon from '@iconify/icons-logos/jest';
 import cypressIcon from '@iconify/icons-logos/cypress';
+
+import jiraIcon from '@iconify/icons-logos/jira';
+import pivotaltrackerIcon from '@iconify/icons-logos/pivotal-tracker';
+import trelloIcon from '@iconify/icons-logos/trello';
 
 import graphqlIcon from '@iconify/icons-logos/graphql';
 import postgresqlIcon from '@iconify/icons-logos/postgresql';
@@ -23,6 +28,7 @@ import mysqlIcon from '@iconify/icons-logos/mysql';
 import gitIcon from '@iconify/icons-logos/git-icon';
 import azureIcon from '@iconify/icons-logos/azure';
 import herokuIcon from '@iconify/icons-logos/heroku-icon';
+import postmanIcon from '@iconify/icons-logos/postman';
 
 import apollostackIcon from '@iconify/icons-logos/apollostack';
 import knexIcon from '@iconify/icons-logos/knex';
@@ -40,16 +46,13 @@ const AboutContent = () => (
       imh="50"
       title="BIO"
       details={{
-        line1: `I am Amaechi Chuks, a software enthusim, an
-                adventurer and a total geek.
-                All my life I've had a flair for puzzles and this urged me to major in Mathematcis
-                at the University of Ibadan Nigeria. My passion for programming was ingnited during my final year
-                project when I had to analyse data using "Matlab" and "R", this made me realise that to efficiently solve problems in my 
-                field as a mathematician I needed some coding skills.`,
-        line2: `Since graduating college I've been up and about in the tech industry. I've lectured people in programming,
-                worked and freelanced as an SEO specialist and also as a data analyst.
-                Most recently I worked with "Andela" as a Software Engineer and I'm currently 
-                running a Full-Stack Web Development and Computer Science program with Lambda School.`,
+        line1: `I am Amaechi Chuks, a software engineer, an
+                adventurer and a total geek. I love Technology and science, this urged me to major in Electrical Electronics Enginnering.
+                Currently, I work for learning Dollars Talent as a freelance software engineer. As a full stack Javascript engineer, 
+                I work on both front-end and back-end of the application. My last employment before learning Dollars Talent was at Andela.
+                I worked as a full Stack developer, I participated in Agile scrum meetings, weekly sprint, bi-weekly demo and
+                code reviews.`,
+        line2: ``
       }}
       shortdeet="Technologies I work with"
       techlist={[
@@ -81,6 +84,11 @@ const AboutContent = () => (
         { name: <Icon icon={chaiIcon} width="30" height="30" />, link: 'https://www.chaijs.com/' },
         { name: <Icon icon={jestIcon} width="30" height="30" />, link: 'https://jestjs.io/' },
         { name: <Icon icon={cypressIcon} width="30" height="30" />, link: 'https://cypress.io/' },
+        { name: <Icon icon={jiraIcon} width="30" height="30" />, link: 'https://jira.com/' },
+        { name: <Icon icon={pivotaltrackerIcon} width="30" height="30" />, link: 'https://pivotaltracker.com/' },
+        { name: <Icon icon={trelloIcon} width="30" height="30" />, link: 'https://trello.com/' },
+        { name: <Icon icon={postmanIcon} width="30" height="30" />, link: 'https://www.getpostman.com/' },
+        { name: <Icon icon={reduxIcon} width="30" height="30" />, link: 'https://www.redux.com/' },
       ]}
       path="/"
     />
