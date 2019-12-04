@@ -6,6 +6,7 @@ import ContextProvider from './Provider';
 import Spinner from './Components/~reusables/components/Spinner';
 import Footer from './Components/~reusables/components/Footer';
 
+const Portfolio = React.lazy(() => import('./Components/views/Portfolio/Portfolio'));
 const AboutPage = React.lazy(() => import('./Components/views/About/AboutPage'));
 const LandingPage = React.lazy(() => import('./Components/views/LandingPage/LandingPage'));
 
@@ -23,6 +24,7 @@ function App() {
           <MainArea>
             <Switch>
               <Route exact path="/" component={LandingPage} />
+              <Route exact path="/projects" component={Portfolio} />
               <Route exact path="/about" component={AboutPage} />
             </Switch>
             <Footer />

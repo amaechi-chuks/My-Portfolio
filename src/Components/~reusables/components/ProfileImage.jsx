@@ -2,15 +2,19 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { heading3, white } from '../variables/index';
+import { heading5, white } from '../variables/index';
 
-const ProfileImage = ({ name, image, path }) => (
+const ProfileImage = ({
+  name, image, path, email, phoneNumber,
+}) => (
   <StyledImage>
     <NavLink to={path}>
       <div>
         <img src={image} alt="" />
       </div>
       <p>{name}</p>
+      <p>{email}</p>
+      <p>{phoneNumber}</p>
     </NavLink>
   </StyledImage>
 );
@@ -46,17 +50,17 @@ const StyledImage = styled.div`
   }
 
   p {
-    width: 100%;
-    padding: 0.5rem;
+    width: 90%;
+    padding: 0.1rem;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: ${heading3};
-    font-weight: 900;
-    text-transform: uppercase;
+    font-size: ${heading5};
+    font-weight: 600;
     color: ${white};
     text-decoration: none;
+    font-size: 1rem;
   }
 `;
 

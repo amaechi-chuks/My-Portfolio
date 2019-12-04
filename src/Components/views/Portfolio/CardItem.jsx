@@ -1,6 +1,6 @@
+/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
 import {
   tabletMaxWidth,
   mobileMaxWidth,
@@ -8,45 +8,41 @@ import {
   extraLargeWidth,
 } from '../../~reusables/variables';
 
-const MySection = ({
-  image,
-  title,
-  shortdeet,
-  techlist,
-  path,
-  details,
+const CardItem = ({
+  image, title, date, details, shortdeet, techlist, path,
 }) => (
   <Card>
+    {/* <span className="date">{date}</span> */}
     <Content>
       <Description>
         <StyledDetails>
           <ProjectTitle>{title}</ProjectTitle>
+          {/* <br /> */}
+          <DateStyle>{date}</DateStyle>
           <br />
-          {details.line1}
+          {details}
           <br />
-          <br />
-          {details.line2}
           <br />
           <ShortDeet>{shortdeet}</ShortDeet>
           {techlist && (
-            <DetailedList>
-              {techlist.map((tech, i) => (
-                // eslint-disable-next-line react/no-array-index-key
-                <ListItem key={i}>
-                  <a href={tech.link}>{tech.name}</a>
-                </ListItem>
-              ))}
-            </DetailedList>
+          <DetailedList>
+            {techlist.map((tech, i) => (
+              <ListItem key={i}>
+                <a href={tech.link}>{tech.name}</a>
+              </ListItem>
+            ))}
+          </DetailedList>
           )}
         </StyledDetails>
       </Description>
-      <MyImage>
+      <Demo>
         {path && (
-          <NavLink to={path}>
+          <a href={path}>
             <img src={image} alt="" />
-          </NavLink>
+          </a>
         )}
-      </MyImage>
+
+      </Demo>
     </Content>
   </Card>
 );
@@ -55,7 +51,7 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-
+  
   width: 100%;
   max-height: 300px;
   span.date {
@@ -80,33 +76,23 @@ const Content = styled.div`
   display: flex;
   padding: 0;
   @media (max-width: ${tabletMaxWidth}) {
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 100%;
     margin: 2rem auto;
-    padding-left: 2rem;
   }
 
   @media (max-width: ${mobileMaxWidth}) {
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 100%;
     margin: 2rem auto;
-    padding-left: 2rem;
   }
 `;
 
 const Description = styled.div`
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   padding: 5px;
-  @media (max-width: 1402px) {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: calc(100vh - 80rem) 0;
-    margin: 2rem auto;
-    margin-bottom: calc(100vh - 40rem);
-  }
   @media (max-width: ${tabletMaxWidth}) {
     justify-content: center;
     align-items: center;
@@ -126,14 +112,9 @@ const Description = styled.div`
 
 const StyledDetails = styled.div`
   padding: 5px;
-  font-weight: 400;
-  word-spacing: 2px;
-  line-height: 1.6em
 `;
 
 const ShortDeet = styled.strong`
-  display: flex;
-  margin: 1rem 0;
   font-style: italic;
   font-weight: 500;
   text-transform: uppercase;
@@ -146,8 +127,14 @@ const ProjectTitle = styled.div`
   margin-bottom: 0.3em;
   -webkit-font-smoothing: antialiased;
 `;
+const DateStyle = styled.div`
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 1;
+  
+  `;
 
-const MyImage = styled.div`
+const Demo = styled.div`
   padding: 5px;
   width: 50%;
   margin: 5px auto;
@@ -156,24 +143,10 @@ const MyImage = styled.div`
   justify-content: center;
   align-items: center;
   img {
-    border-radius: 10px;
-    object-fit: cover;
-    margin-left: 16px;
-  }
-
-  @media (min-width: ${extraLargeWidth}) {
-    width: 50%;
-  }
-
-  @media (max-width: 1402px) {
-    justify-content: center;
-    align-items: center;
+    border-radius: inherit;
     width: 100%;
     height: 100%;
-    padding: 1rem;
-    margin: 2rem auto;
   }
-
   @media (max-width: ${largeWidth}) {
     width: 100%;
     margin-top: 2rem;
@@ -193,11 +166,15 @@ const MyImage = styled.div`
     padding: 3px;
     margin: 0 auto;
   }
+  @media (min-width: ${extraLargeWidth}) {
+    width: 50%;
+  }
 `;
 
 const DetailedList = styled.ul`
   margin: 0;
   padding: 0;
+  list-style: disc;
 `;
 
 const ListItem = styled.li`
@@ -206,12 +183,15 @@ const ListItem = styled.li`
   padding-left: 1rem;
   position: relative;
   overflow: hidden;
+  font-weight: 500;
   a {
     display: inline-block;
+    /* background-color: rgba(175, 34, 34, 0.8); */
     background-color: rgba(0, 0, 0, 0.3);
     color: #000;
-    padding: 4px 8px;
-    font-size: 1.5rem;
+    padding: 4px 10px;
+    font-size: 13px;
+    text-transform: uppercase;
   }
 `;
-export default MySection;
+export default CardItem;

@@ -13,7 +13,7 @@ class SidebarContainer extends React.Component {
       <MyContext.Consumer>
         {(context) => (
           <StyledSidebar className={context.sidebarOpen ? 'active' : ''}>
-            <ProfileImage name="Amaechi Chuks" image={chuks} path="/" />
+            <ProfileImage name="AMAECHI CHUKS" email="amaechichuks101@gmail.com " phoneNumber="+2347068566559" image={chuks} path="/" />
             <div
               className="nav-items"
               role="presentation"

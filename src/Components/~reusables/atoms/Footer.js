@@ -27,7 +27,7 @@ export const StyledFooter = styled.footer`
     display: flex;
   }
   @media (max-width: ${mobileMaxWidth}) {
-    display: flex;
+    display: none;
     width: 100%;
   }
 `;
@@ -52,6 +52,7 @@ export const SocialContact = styled.div`
   border: 1px solid #000;
   background: black;
   color: black;
+  cursor: pointer;
 }
 
 
