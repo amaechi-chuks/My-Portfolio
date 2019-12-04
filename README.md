@@ -29,7 +29,7 @@ npm  start
 ## License
 This projects is under the MIT LICENSE
 
-### Live demo
+### Live
 
-You can test the api endpoints
- [Here ](https://politico-software.herokuapp.com/)
+View the application   
+ [Here ](https://5de78dc6da60e79f0edf5515--lucid-tesla-3e864d.netlify.com/)
