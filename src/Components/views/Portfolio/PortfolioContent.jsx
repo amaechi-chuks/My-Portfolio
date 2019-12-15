@@ -31,7 +31,6 @@ const PortfolioContent = () => (
     <ProjectList>
       <ListItem>
         <CardItem
-          date="April 2019"
           image={AuthorsHaven}
           title="Author's Haven"
           details="This is a Medium clone application for reseachers. Authors Haven is a home for brillant minds to make their contibutions to the world and profer solutions."
@@ -95,10 +94,8 @@ const PortfolioContent = () => (
           ]}
           path="https://develop--hermes-ah.netlify.com/"
         />
-
         <Divider />
         <CardItem
-          date="Jun 2019"
           image={Politico}
           title="Politico"
           details={`Politico is a platform that enables citizens to give their mandate to politicians running different government offices while building
@@ -166,11 +163,10 @@ const PortfolioContent = () => (
               link: 'https://swagger.io/',
             },
           ]}
-          path="https://anonymous-team-feeedback.herokuapp.com/"
+          path="https://keen-murdock-6b52d2.netlify.com/"
         />
         <Divider />
         <CardItem
-          date="Aug 2018"
           image={FacialRecognitionApp}
           title="Face Recognition"
           details="Face recognition was designed to match users image based on the picture they upload"
@@ -212,42 +208,9 @@ const PortfolioContent = () => (
               link: 'https://nodejs.org/en/',
             },
           ]}
-          path="https://getdroom.netlify.com/"
+          path="https://face-recognition-ap.herokuapp.com/"
         />
-        <Divider />
-        <CardItem
-          date="Feb 2018"
-          image={Weconnect}
-          title="Weconnect"
-          details="Weconnect is a full-stack vanilla JavaScript application that brings businesses and indivduals together"
-          shortdeet="Technologies"
-          techlist={[
-            {
-              name: <Icon icon={expressIcon} width="30" height="30" />,
-              link: 'https://expressjs.com',
-            },
-            {
-              name: <Icon icon={gitIcon} width="30" height="30" />,
-              link: 'https://git-scm.com',
-            },
-            {
-              name: <Icon icon={postgresqlIcon} width="30" height="30" />,
-              link: 'https://www.postgresql.org',
-            },
-            {
-              name: <Icon icon={javascriptIcon} width="30" height="30" />,
-              link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-            },
-            {
-              name: <Icon icon={nodejsIcon} width="30" height="30" />,
-              link: 'https://nodejs.org/en/',
-            },
-            { name: 'node mailer', link: 'https://nodemailer.com/about/' },
-            { name: 'Jwt', link: 'https://jwt.io' },
-          ]}
-          path="https://the-politico.herokuapp.com/"
-        />
-        <Divider />
+        <Divider style={{ border: 'white', background: 'transparent' }} />
       </ListItem>
     </ProjectList>
   </ContentLayout>

@@ -24,9 +24,6 @@ const MySection = ({
           <br />
           {details.line1}
           <br />
-          <br />
-          {details.line2}
-          <br />
           <ShortDeet>{shortdeet}</ShortDeet>
           {techlist && (
             <DetailedList>
@@ -55,25 +52,8 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-
   width: 100%;
-  max-height: 300px;
-  span.date {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  @media (max-width: 1200px) {
-    margin-bottom: 15rem;
-  }
-
-  @media (max-width: ${tabletMaxWidth}) {
-    margin: 2rem auto;
-  }
-
-  @media (max-width: ${mobileMaxWidth}) {
-    margin: 2rem auto;
-  }
+  max-height: 1000px;
 `;
 
 const Content = styled.div`
@@ -128,7 +108,39 @@ const StyledDetails = styled.div`
   padding: 5px;
   font-weight: 400;
   word-spacing: 2px;
-  line-height: 1.6em
+  line-height: 1.6em;
+  @media (min-width: ${extraLargeWidth}) {
+    width: 100%;
+  }
+
+  @media (max-width: 1402px) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    margin: 2rem auto;
+  }
+
+  @media (max-width: ${largeWidth}) {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  @media (max-width: ${tabletMaxWidth}) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: ${mobileMaxWidth}) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3px;
+    margin: 0 auto;
+  }
 `;
 
 const ShortDeet = styled.strong`
@@ -159,6 +171,38 @@ const MyImage = styled.div`
     border-radius: 10px;
     object-fit: cover;
     margin-left: 16px;
+    @media (min-width: ${extraLargeWidth}) {
+    width: 50%;
+  }
+
+  @media (max-width: 1402px) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    margin: 2rem auto;
+  }
+
+  @media (max-width: ${largeWidth}) {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  @media (max-width: ${tabletMaxWidth}) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: ${mobileMaxWidth}) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3px;
+    margin: 0 auto;
+  }
   }
 
   @media (min-width: ${extraLargeWidth}) {
@@ -206,6 +250,7 @@ const ListItem = styled.li`
   padding-left: 1rem;
   position: relative;
   overflow: hidden;
+  margin: 5px;
   a {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.3);

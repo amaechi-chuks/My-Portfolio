@@ -46,13 +46,9 @@ const AboutContent = () => (
       imh="50"
       title="BIO"
       details={{
-        line1: `I am Amaechi Chuks, a software engineer, an
+        line1: `I am Amaechi Chuks, a Software Engineer, an
                 adventurer and a total geek. I love Technology and science, this urged me to major in Electrical Electronics Enginnering.
-                Currently, I work for learning Dollars Talent as a freelance software engineer. As a full stack Javascript engineer, 
-                I work on both front-end and back-end of the application. My last employment before learning Dollars Talent was at Andela.
-                I worked as a full Stack developer, I participated in Agile scrum meetings, weekly sprint, bi-weekly demo and
-                code reviews.`,
-        line2: ``
+                Currently, I work for learning Dollars Talent as a freelance Full-Stack Javascript Software Engineer.`,
       }}
       shortdeet="Technologies I work with"
       techlist={[

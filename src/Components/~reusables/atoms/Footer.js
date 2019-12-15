@@ -10,8 +10,8 @@ export const StyledFooter = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 5;
-  position: fixed;
+  position: relative;
+  background: white;
   bottom: 0;
   height: 8rem;
   width: 100%;
@@ -27,7 +27,7 @@ export const StyledFooter = styled.footer`
     display: flex;
   }
   @media (max-width: ${mobileMaxWidth}) {
-    display: none;
+    display: flex;
     width: 100%;
   }
 `;

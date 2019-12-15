@@ -9,7 +9,7 @@ import {
 } from '../../~reusables/variables';
 
 const CardItem = ({
-  image, title, date, details, shortdeet, techlist, path,
+  image, title, details, shortdeet, techlist, path,
 }) => (
   <Card>
     {/* <span className="date">{date}</span> */}
@@ -17,8 +17,6 @@ const CardItem = ({
       <Description>
         <StyledDetails>
           <ProjectTitle>{title}</ProjectTitle>
-          {/* <br /> */}
-          <DateStyle>{date}</DateStyle>
           <br />
           {details}
           <br />
@@ -51,9 +49,8 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  
   width: 100%;
-  max-height: 300px;
+  max-height: 500px;
   span.date {
     position: relative;
     display: flex;
@@ -127,12 +124,6 @@ const ProjectTitle = styled.div`
   margin-bottom: 0.3em;
   -webkit-font-smoothing: antialiased;
 `;
-const DateStyle = styled.div`
-  font-weight: 100;
-  font-size: 20px;
-  line-height: 1;
-  
-  `;
 
 const Demo = styled.div`
   padding: 5px;
@@ -146,6 +137,7 @@ const Demo = styled.div`
     border-radius: inherit;
     width: 100%;
     height: 100%;
+    margin: 65px 0 0 0;
   }
   @media (max-width: ${largeWidth}) {
     width: 100%;
