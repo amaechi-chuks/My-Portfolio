@@ -22,7 +22,6 @@ import CardItem from './CardItem';
 import AuthorsHaven from '../../~reusables/assets/images/authorsHaven.png';
 import FacialRecognitionApp from '../../~reusables/assets/images/faceApp.png';
 import Politico from '../../~reusables/assets/images/politico.png';
-import Weconnect from '../../~reusables/assets/images/weconnect.png';
 import Divider from '../../~reusables/atoms/Divider';
 import ContentLayout from '../../~reusables/components/ContentLayout';
 

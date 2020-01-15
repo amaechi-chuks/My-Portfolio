@@ -32,4 +32,4 @@ This projects is under the MIT LICENSE
 ### Live
 
 View the application   
- [Here ](https://5de78dc6da60e79f0edf5515--lucid-tesla-3e864d.netlify.com/)
+ [Here ]https://stupefied-fermat-b40dd6.netlify.com)

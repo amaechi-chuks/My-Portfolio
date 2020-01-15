@@ -15,6 +15,8 @@ import mochaIcon from '@iconify/icons-logos/mocha';
 import chaiIcon from '@iconify/icons-logos/chai';
 import jestIcon from '@iconify/icons-logos/jest';
 import cypressIcon from '@iconify/icons-logos/cypress';
+import angularIcon from '@iconify/icons-logos/angular-icon';
+import firebaseIcon from '@iconify/icons-logos/firebase';
 
 import jiraIcon from '@iconify/icons-logos/jira';
 import pivotaltrackerIcon from '@iconify/icons-logos/pivotal-tracker';
@@ -85,6 +87,8 @@ const AboutContent = () => (
         { name: <Icon icon={trelloIcon} width="30" height="30" />, link: 'https://trello.com/' },
         { name: <Icon icon={postmanIcon} width="30" height="30" />, link: 'https://www.getpostman.com/' },
         { name: <Icon icon={reduxIcon} width="30" height="30" />, link: 'https://www.redux.com/' },
+        { name: <Icon icon={angularIcon} width="30" height="30" />, link: 'https://angular.io/' },
+        { name: <Icon icon={firebaseIcon} width="30" height="30" />, link: 'https://firebase.google.com/' },
       ]}
       path="/"
     />

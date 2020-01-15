@@ -53,7 +53,7 @@ const Card = styled.div`
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
-  max-height: 1000px;
+  max-height: 300px;
 `;
 
 const Content = styled.div`
