@@ -48,47 +48,140 @@ const AboutContent = () => (
       imh="50"
       title="BIO"
       details={{
-        line1: `I am Amaechi Chuks, a Software Engineer, an
-                adventurer and a total geek. I love Technology and science, this urged me to major in Electrical Electronics Enginnering.
-                Currently, I work for learning Dollars Talent as a freelance Full-Stack Javascript Software Engineer.`,
+        line1: `I am a dedicated software developer, 
+        I transform complicated technical ideas into user-friendly applications. 
+        I believe in telling relatable stories through Web applications,
+        so I’ve studied the basics of a modern Web application. 
+        My portfolio showcases a lineup of my most recent tricks,
+        I’m always ready for new Web development opportunities.`,
       }}
       shortdeet="Technologies I work with"
       techlist={[
-        { name: <Icon icon={javascriptIcon} width="30" height="30" />, link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
-        { name: <Icon icon={nodejsIcon} width="30" height="30" />, link: 'https://nodejs.org/en/' },
-        { name: <Icon icon={reactIcon} width="30" height="30" />, link: 'https://reactjs.org' },
-        { name: <Icon icon={jqueryIcon} width="30" height="30" />, link: 'https://jquery.com' },
+        {
+          name: <Icon icon={javascriptIcon} width="30" height="30" />,
+          link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+        },
+        {
+          name: <Icon icon={nodejsIcon} width="30" height="30" />,
+          link: 'https://nodejs.org/en/',
+        },
+        {
+          name: <Icon icon={reactIcon} width="30" height="30" />,
+          link: 'https://reactjs.org',
+        },
+        {
+          name: <Icon icon={jqueryIcon} width="30" height="30" />,
+          link: 'https://jquery.com',
+        },
         {
           name: <Icon icon={graphqlIcon} width="30" height="30" />,
           link: 'https://graphql.org',
         },
-        { name: <Icon icon={expressIcon} width="30" height="30" />, link: 'https://expressjs.com' },
-        { name: <Icon icon={apollostackIcon} width="30" height="30" />, link: 'https://www.apollographql.com/docs/apollo-server/' },
-        { name: <Icon icon={postgresqlIcon} width="30" height="30" />, link: 'https://www.postgresql.org' },
-        { name: <Icon icon={sequelizeIcon} width="30" height="30" />, link: 'https://sequelize.org' },
-        { name: <Icon icon={knexIcon} width="30" height="30" />, link: 'http://knexjs.org/' },
-        { name: <Icon icon={mongodbIcon} width="30" height="30" />, link: 'https://www.mongodb.com' },
-        { name: <Icon icon={mysqlIcon} width="30" height="30" />, link: 'https://www.mysql.com' },
+        {
+          name: <Icon icon={expressIcon} width="30" height="30" />,
+          link: 'https://expressjs.com',
+        },
+        {
+          name: <Icon icon={apollostackIcon} width="30" height="30" />,
+          link: 'https://www.apollographql.com/docs/apollo-server/',
+        },
+        {
+          name: <Icon icon={postgresqlIcon} width="30" height="30" />,
+          link: 'https://www.postgresql.org',
+        },
+        {
+          name: <Icon icon={sequelizeIcon} width="30" height="30" />,
+          link: 'https://sequelize.org',
+        },
+        {
+          name: <Icon icon={knexIcon} width="30" height="30" />,
+          link: 'http://knexjs.org/',
+        },
+        {
+          name: <Icon icon={mongodbIcon} width="30" height="30" />,
+          link: 'https://www.mongodb.com',
+        },
+        {
+          name: <Icon icon={mysqlIcon} width="30" height="30" />,
+          link: 'https://www.mysql.com',
+        },
 
-        { name: <Icon icon={gitIcon} width="30" height="30" />, link: 'https://git-scm.com' },
-        { name: <Icon icon={azureIcon} width="30" height="30" />, link: 'https://azure.microsoft.com/en-us/' },
-        { name: <Icon icon={herokuIcon} width="30" height="30" />, link: 'https://dashboard.heroku.com' },
-        { name: <Icon icon={netlifyIcon} width="30" height="30" />, link: 'https://www.netlify.com/' },
-        { name: <Icon icon={vueIcon} width="30" height="30" />, link: 'https://www.vuejs.org/' },
-        { name: <Icon icon={ReduxSagaIcon} width="30" height="30" />, link: 'https://redux-saga.js.org/' },
-        { name: <Icon icon={swaggerIcon} width="30" height="30" />, link: 'https://swagger.io/' },
-        { name: <Icon icon={githubIcon} width="30" height="30" />, link: 'https://github.com/' },
-        { name: <Icon icon={mochaIcon} width="30" height="30" />, link: 'https://mochajs.org/' },
-        { name: <Icon icon={chaiIcon} width="30" height="30" />, link: 'https://www.chaijs.com/' },
-        { name: <Icon icon={jestIcon} width="30" height="30" />, link: 'https://jestjs.io/' },
-        { name: <Icon icon={cypressIcon} width="30" height="30" />, link: 'https://cypress.io/' },
-        { name: <Icon icon={jiraIcon} width="30" height="30" />, link: 'https://jira.com/' },
-        { name: <Icon icon={pivotaltrackerIcon} width="30" height="30" />, link: 'https://pivotaltracker.com/' },
-        { name: <Icon icon={trelloIcon} width="30" height="30" />, link: 'https://trello.com/' },
-        { name: <Icon icon={postmanIcon} width="30" height="30" />, link: 'https://www.getpostman.com/' },
-        { name: <Icon icon={reduxIcon} width="30" height="30" />, link: 'https://www.redux.com/' },
-        { name: <Icon icon={angularIcon} width="30" height="30" />, link: 'https://angular.io/' },
-        { name: <Icon icon={firebaseIcon} width="30" height="30" />, link: 'https://firebase.google.com/' },
+        {
+          name: <Icon icon={gitIcon} width="30" height="30" />,
+          link: 'https://git-scm.com',
+        },
+        {
+          name: <Icon icon={azureIcon} width="30" height="30" />,
+          link: 'https://azure.microsoft.com/en-us/',
+        },
+        {
+          name: <Icon icon={herokuIcon} width="30" height="30" />,
+          link: 'https://dashboard.heroku.com',
+        },
+        {
+          name: <Icon icon={netlifyIcon} width="30" height="30" />,
+          link: 'https://www.netlify.com/',
+        },
+        {
+          name: <Icon icon={vueIcon} width="30" height="30" />,
+          link: 'https://www.vuejs.org/',
+        },
+        {
+          name: <Icon icon={ReduxSagaIcon} width="30" height="30" />,
+          link: 'https://redux-saga.js.org/',
+        },
+        {
+          name: <Icon icon={swaggerIcon} width="30" height="30" />,
+          link: 'https://swagger.io/',
+        },
+        {
+          name: <Icon icon={githubIcon} width="30" height="30" />,
+          link: 'https://github.com/',
+        },
+        {
+          name: <Icon icon={mochaIcon} width="30" height="30" />,
+          link: 'https://mochajs.org/',
+        },
+        {
+          name: <Icon icon={chaiIcon} width="30" height="30" />,
+          link: 'https://www.chaijs.com/',
+        },
+        {
+          name: <Icon icon={jestIcon} width="30" height="30" />,
+          link: 'https://jestjs.io/',
+        },
+        {
+          name: <Icon icon={cypressIcon} width="30" height="30" />,
+          link: 'https://cypress.io/',
+        },
+        {
+          name: <Icon icon={jiraIcon} width="30" height="30" />,
+          link: 'https://jira.com/',
+        },
+        {
+          name: <Icon icon={pivotaltrackerIcon} width="30" height="30" />,
+          link: 'https://pivotaltracker.com/',
+        },
+        {
+          name: <Icon icon={trelloIcon} width="30" height="30" />,
+          link: 'https://trello.com/',
+        },
+        {
+          name: <Icon icon={postmanIcon} width="30" height="30" />,
+          link: 'https://www.getpostman.com/',
+        },
+        {
+          name: <Icon icon={reduxIcon} width="30" height="30" />,
+          link: 'https://www.redux.com/',
+        },
+        {
+          name: <Icon icon={angularIcon} width="30" height="30" />,
+          link: 'https://angular.io/',
+        },
+        {
+          name: <Icon icon={firebaseIcon} width="30" height="30" />,
+          link: 'https://firebase.google.com/',
+        },
       ]}
       path="/"
     />
