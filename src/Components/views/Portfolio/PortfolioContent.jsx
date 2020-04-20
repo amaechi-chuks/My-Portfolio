@@ -8,9 +8,11 @@ import expressIcon from '@iconify/icons-logos/express';
 import postgresqlIcon from '@iconify/icons-logos/postgresql';
 import gitIcon from '@iconify/icons-logos/git-icon';
 import herokuIcon from '@iconify/icons-logos/heroku-icon';
+import materialUi from '@iconify/icons-logos/material-ui';
 import knexIcon from '@iconify/icons-logos/knex';
 import sequelizeIcon from '@iconify/icons-logos/sequelize';
 import netlifyIcon from '@iconify/icons-logos/netlify';
+import socketIo from '@iconify/icons-logos/websocket';
 import reduxIcon from '@iconify/icons-logos/redux';
 import postmanIcon from '@iconify/icons-logos/postman';
 import pivotaltrackerIcon from '@iconify/icons-logos/pivotal-tracker';
@@ -20,6 +22,8 @@ import mochaIcon from '@iconify/icons-logos/mocha';
 import chaiIcon from '@iconify/icons-logos/chai';
 import CardItem from './CardItem';
 import AuthorsHaven from '../../~reusables/assets/images/authorsHaven.png';
+import COVID19 from '../../~reusables/assets/images/covid19.jpeg';
+import ChatApp from '../../~reusables/assets/images/chatApp.png';
 import FacialRecognitionApp from '../../~reusables/assets/images/faceApp.png';
 import Politico from '../../~reusables/assets/images/politico.png';
 import Divider from '../../~reusables/atoms/Divider';
@@ -29,6 +33,44 @@ const PortfolioContent = () => (
   <ContentLayout>
     <ProjectList>
       <ListItem>
+        <CardItem
+          image={COVID19}
+          title="World COVID-19 Update"
+          details="This application atomatically generate and update countires COVID-19 status."
+          shortdeet="Technologies"
+          techlist={[
+            {
+              name: <Icon icon={javascriptIcon} width="30" height="30" />,
+              link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+            },
+            {
+              name: <Icon icon={nodejsIcon} width="30" height="30" />,
+              link: 'https://www.nodejs.com/',
+            },
+            {
+              name: <Icon icon={reactIcon} width="30" height="30" />,
+              link: 'https://reactjs.org',
+            },
+            {
+              name: <Icon icon={netlifyIcon} width="30" height="30" />,
+              link: 'https://www.netlify.com/',
+            },
+            {
+              name: <Icon icon={gitIcon} width="30" height="30" />,
+              link: 'https://git-scm.com',
+            },
+            {
+              name: <Icon icon={githubIcon} width="30" height="30" />,
+              link: 'https://github.com/',
+            },
+            {
+              name: <Icon icon={materialUi} width="30" height="30" />,
+              link: 'https://material-ui.com/',
+            },
+          ]}
+          path="https://covid19-updates1.netlify.app/"
+        />
+        <Divider />
         <CardItem
           image={AuthorsHaven}
           title="Author's Haven"
@@ -92,6 +134,48 @@ const PortfolioContent = () => (
             },
           ]}
           path="https://develop--hermes-ah.netlify.com/"
+        />
+        <Divider />
+        <CardItem
+          image={ChatApp}
+          title="Meet && Tang"
+          details="This is an annoymus chat application"
+          shortdeet="Technologies"
+          techlist={[
+            {
+              name: <Icon icon={javascriptIcon} width="30" height="30" />,
+              link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+            },
+            {
+              name: <Icon icon={nodejsIcon} width="30" height="30" />,
+              link: 'https://www.nodejs.com/',
+            },
+            {
+              name: <Icon icon={reactIcon} width="30" height="30" />,
+              link: 'https://reactjs.org',
+            },
+            {
+              name: <Icon icon={socketIo} width="30" height="30" />,
+              link: 'https://socket.io/',
+            },
+            {
+              name: <Icon icon={expressIcon} width="30" height="30" />,
+              link: 'https://expressjs.com',
+            },
+            {
+              name: <Icon icon={gitIcon} width="30" height="30" />,
+              link: 'https://git-scm.com',
+            },
+            {
+              name: <Icon icon={herokuIcon} width="30" height="30" />,
+              link: 'https://dashboard.heroku.com',
+            },
+            {
+              name: <Icon icon={githubIcon} width="30" height="30" />,
+              link: 'https://github.com/',
+            },
+          ]}
+          path="https://chuks-tang-app.herokuapp.com/"
         />
         <Divider />
         <CardItem
@@ -188,7 +272,8 @@ const PortfolioContent = () => (
               link: 'https://www.redux.com/',
             },
             {
-              name: <Icon icon={knexIcon} width="30" height="30" />, link: 'http://knexjs.org/',
+              name: <Icon icon={knexIcon} width="30" height="30" />,
+              link: 'http://knexjs.org/',
             },
             {
               name: <Icon icon={expressIcon} width="30" height="30" />,

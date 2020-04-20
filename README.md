@@ -32,4 +32,4 @@ This projects is under the MIT LICENSE
 ### Live
 
 View the application   
- [Here ]https://stupefied-fermat-b40dd6.netlify.com)
+ [Here ]https://amaechi-chuks.netlify.app/)
