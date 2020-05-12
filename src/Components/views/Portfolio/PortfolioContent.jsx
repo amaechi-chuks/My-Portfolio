@@ -6,6 +6,9 @@ import reactIcon from '@iconify/icons-logos/react';
 import javascriptIcon from '@iconify/icons-logos/javascript';
 import expressIcon from '@iconify/icons-logos/express';
 import postgresqlIcon from '@iconify/icons-logos/postgresql';
+import mongoDb from '@iconify/icons-logos/mongodb';
+import jira from '@iconify/icons-logos/jira';
+import sendGrid from '@iconify/icons-logos/sendgrid';
 import gitIcon from '@iconify/icons-logos/git-icon';
 import herokuIcon from '@iconify/icons-logos/heroku-icon';
 import materialUi from '@iconify/icons-logos/material-ui';
@@ -22,7 +25,8 @@ import mochaIcon from '@iconify/icons-logos/mocha';
 import chaiIcon from '@iconify/icons-logos/chai';
 import CardItem from './CardItem';
 import AuthorsHaven from '../../~reusables/assets/images/authorsHaven.png';
-import COVID19 from '../../~reusables/assets/images/covid19.jpeg';
+import COVID19 from '../../~reusables/assets/images/covid19.png';
+import Ischolars from '../../~reusables/assets/images/Ischolars.png';
 import ChatApp from '../../~reusables/assets/images/chatApp.png';
 import FacialRecognitionApp from '../../~reusables/assets/images/faceApp.png';
 import Politico from '../../~reusables/assets/images/politico.png';
@@ -33,6 +37,52 @@ const PortfolioContent = () => (
   <ContentLayout>
     <ProjectList>
       <ListItem>
+        <CardItem
+          image={Ischolars}
+          title="iScholars"
+          details="iScholars has been built to empower a worldwide community of teachers and students and improve their communication with more transparency.."
+          shortdeet="Technologies"
+          techlist={[
+            {
+              name: <Icon icon={javascriptIcon} width="30" height="30" />,
+              link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+            },
+            {
+              name: <Icon icon={nodejsIcon} width="30" height="30" />,
+              link: 'https://www.nodejs.com/',
+            },
+            {
+              name: <Icon icon={reactIcon} width="30" height="30" />,
+              link: 'https://reactjs.org',
+            },
+            {
+              name: <Icon icon={netlifyIcon} width="30" height="30" />,
+              link: 'https://www.netlify.com/',
+            },
+            {
+              name: <Icon icon={gitIcon} width="30" height="30" />,
+              link: 'https://git-scm.com',
+            },
+            {
+              name: <Icon icon={githubIcon} width="30" height="30" />,
+              link: 'https://github.com/',
+            },
+            {
+              name: <Icon icon={mongoDb} width="30" height="30" />,
+              link: 'https://www.mongodb.com/',
+            },
+            {
+              name: <Icon icon={sendGrid} width="30" height="30" />,
+              link: 'https://app.sendgrid.com/',
+            },
+            {
+              name: <Icon icon={jira} width="30" height="30" />,
+              link: 'https://www.atlassian.com/software/jira?&aceid=&adposition=&adgroup=95003645449&campaign=9124878702&creative=415542752371&device=c&keyword=jira&matchtype=e&network=g&placement=&ds_kids=p51242189318&ds_e=GOOGLE&ds_eid=700000001558501&ds_e1=GOOGLE&gclid=CjwKCAjwkun1BRAIEiwA2mJRWdf7zmhqBLm0qlWJzMpR7JWfCRAOQM5m9lokFY9wCug1-KYq4YFhahoCqsEQAvD_BwE&gclsrc=aw.ds/',
+            },
+          ]}
+          path="https://ischolars.netlify.app/"
+        />
+        <Divider />
         <CardItem
           image={COVID19}
           title="World COVID-19 Update"

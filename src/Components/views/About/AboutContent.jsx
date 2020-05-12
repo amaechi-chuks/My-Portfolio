@@ -37,7 +37,7 @@ import knexIcon from '@iconify/icons-logos/knex';
 import sequelizeIcon from '@iconify/icons-logos/sequelize';
 import netlifyIcon from '@iconify/icons-logos/netlify';
 
-import chuksPhoto from '../../~reusables/assets/images/chuks.jpeg';
+import chuksPhoto from '../../~reusables/assets/images/chuksp.jpeg';
 import ContentLayout from '../../~reusables/components/ContentLayout';
 import MySection from './MySection';
 

@@ -25,17 +25,17 @@ export const Navbar = styled.nav`
     z-index: 5;
 
     @media (max-width: ${tabletMaxWidth}) {
-      display: flex;
+      display: none;
     }
   }
 
   @media (max-width: ${tabletMaxWidth}) {
-    display: flex;
+    display: none;
   }
 
   @media (max-width: ${mobileMaxWidth}) {
-    display: flex;
-    width: 100%;
+    display: none;
+   
   }
 `;
 

@@ -171,8 +171,9 @@ const MyImage = styled.div`
     border-radius: 10px;
     object-fit: cover;
     margin-left: 16px;
+    width: 100%;
     @media (min-width: ${extraLargeWidth}) {
-    width: 50%;
+    width: 10%;
   }
 
   @media (max-width: 1402px) {
